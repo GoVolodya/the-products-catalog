@@ -91,8 +91,8 @@
 
     &--active {
       opacity: 1;
-      min-height: calc(100vh - 49px);
-      max-height: calc(100vh - 49px);
+      min-height: calc(100dvh - 49px);
+      max-height: calc(100dvh - 49px);
 
       @media (min-width: $tablet) {
         min-height: unset;
@@ -234,4 +234,8 @@
       border: 1px solid $black;
     }
   }
+}
+
+body:has(.navigation--active) {
+  overflow: hidden;
 }
